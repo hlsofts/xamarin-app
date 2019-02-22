@@ -1,0 +1,12 @@
+﻿/ref:"E:\Moss.Price.Mobile\MossPrice\MossPrice\MossPrice.UWP\obj\ARM\Release\ilc\intermediate\PreMergeILTransformed"
+/ref:"C:\Users\long\.nuget\packages\runtime.win10-arm.microsoft.net.native.sharedlibrary\2.1.8\tools\SharedLibrary\ret\AnalysisILToc"
+/ref:"E:\Moss.Price.Mobile\MossPrice\MossPrice\MossPrice.UWP\obj\ARM\Release\ilc\intermediate\PreMergeILTransformed"
+/ref:"E:\Moss.Price.Mobile\MossPrice\MossPrice\MossPrice.UWP\obj\ARM\Release\ilc\in\\"
+/ref:"C:\Users\long\.nuget\packages\runtime.win10-arm.microsoft.net.native.compiler\2.1.8\tools\ARM\ilc\lib\Private\\"
+/ref:"E:\Moss.Price.Mobile\MossPrice\MossPrice\MossPrice.UWP\obj\ARM\Release\ilc\in"
+/ref:"E:\Moss.Price.Mobile\MossPrice\MossPrice\MossPrice.UWP\obj\ARM\Release\ilc\in\WinMetadata"
+/ca:System.Private.CoreLib
+/cscpath:"C:\Users\long\.nuget\packages\microsoft.net.native.compiler\2.1.8\tools\csc"
+/out:"E:\Moss.Price.Mobile\MossPrice\MossPrice\MossPrice.UWP\obj\ARM\Release\ilc\intermediate\SgGenerated\\"
+/int:"E:\Moss.Price.Mobile\MossPrice\MossPrice\MossPrice.UWP\obj\ARM\Release\ilc\intermediate\MossPrice.UWP.Sg"
+"@E:\Moss.Price.Mobile\MossPrice\MossPrice\MossPrice.UWP\obj\ARM\Release\ilc\intermediate\MossPrice.UWP.Sg\ComputedSerializationInput.txt"

@@ -1,0 +1,16 @@
+﻿/osver:6.2
+/appcontainer
+"/runtime:mrt100_app"
+/eh:clr
+/pdb
+"/nativeLink:C:\Users\long\.nuget\packages\runtime.win10-x64.microsoft.net.native.compiler\2.1.8\tools\x64\ilc\lib\Native\vmath.lib"
+/customImports
+/methodBodyFolding
+"E:\Moss.Price.Mobile\MossPrice\MossPrice\MossPrice.UWP\obj\x64\Release\ilc\intermediate\MDIL\MossPrice.UWP.mdilexe"
+"/i:E:\Moss.Price.Mobile\MossPrice\MossPrice\MossPrice.UWP\obj\x64\Release\ilc\intermediate\MDIL"
+"/out:E:\Moss.Price.Mobile\MossPrice\MossPrice\MossPrice.UWP\obj\x64\Release\ilc\intermediate\Native\MossPrice.UWP.exe"
+"/pdbAltPath:E:\Moss.Price.Mobile\MossPrice\MossPrice\MossPrice.UWP\bin\x64\Release\ilc"
+"/res:E:\Moss.Price.Mobile\MossPrice\MossPrice\MossPrice.UWP\obj\x64\Release\ilc\intermediate\Native.res"
+"/i:C:\Users\long\.nuget\packages\runtime.win10-x64.microsoft.net.native.sharedlibrary\2.1.8\tools\SharedLibrary\ret\MDIL"
+/shimexe
+"/classlib:SharedLibrary"

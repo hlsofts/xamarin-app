@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:views="clr-namespace:SuaveControls.Views;assembly=SuaveControls.FloatingActionButton"
+             x:Class="MossPrice.Views.HomeDetail"             
+             Title="Danh sách đơn hàng">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem x:Name="btn_search" Icon="baseline_search_white_24.png" Clicked="Btn_search_Clicked"></ToolbarItem>
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <AbsoluteLayout HorizontalOptions="FillAndExpand"  VerticalOptions="FillAndExpand">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="8*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="4*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+            </Grid>
+            <StackLayout Padding="10" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2">
+                <ListView x:Name="lstOrder" ItemsSource="{Binding ListCustomer}" CachingStrategy="RecycleElement" RowHeight="90" ItemTapped="LstOrder_ItemTapped">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <StackLayout Orientation="Vertical" Padding="5">
+                                    <StackLayout Orientation="Horizontal">
+                                        <Grid>
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition Height="*"></RowDefinition>
+                                                <RowDefinition Height="*"></RowDefinition>
+                                            </Grid.RowDefinitions>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="*"></ColumnDefinition>
+                                                <ColumnDefinition Width="*"></ColumnDefinition>
+                                            </Grid.ColumnDefinitions>
+                                        </Grid>
+                                        <StackLayout Orientation="Vertical" Grid.Row="0" Grid.Column="0">
+                                            <Label Text="{Binding CustomerName}" TextColor="Black" FontSize="15" FontAttributes="Bold"></Label>
+                                            <Label Text="{Binding CustomerCode}" TextColor="Black" FontSize="14"></Label>
+                                        </StackLayout>
+                                        <StackLayout Orientation="Vertical" Grid.Row="0" Grid.Column="1" Padding="20,5" HorizontalOptions="EndAndExpand">
+                                            <Label Text="{Binding Tel1}" HorizontalOptions="End" HorizontalTextAlignment="End" TextColor="#006b39" FontSize="15" FontAttributes="Bold"></Label>
+                                        </StackLayout>                                        
+                                    </StackLayout>
+                                    <Label Grid.Row="1" Text="{Binding Address}" Margin="5,0" TextColor="Black" FontSize="14" HorizontalTextAlignment="Start"></Label>
+                                </StackLayout>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </StackLayout>
+            <!--<ContentView  Grid.Column="0" Grid.Row="0" x:Name="p_search" BackgroundColor="#C0808080" Padding="10, 0" IsVisible="false" AbsoluteLayout.LayoutBounds="0, 0, 1, 1" AbsoluteLayout.LayoutFlags="All">
+                <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+                    <StackLayout Orientation="Vertical" WidthRequest="300" BackgroundColor="White" Padding="20,20,20,5">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                            </Grid.RowDefinitions>
+                            <Label Grid.Column="0" Grid.Row="0" Text="Từ ngày"></Label>
+                            <DatePicker x:Name="tungay" Grid.Column="0" Grid.Row="1" Format="dd/MM/yyyy"></DatePicker>
+                            <Label Grid.Column="1" Grid.Row="0" Text="Đến ngày"></Label>
+                            <DatePicker x:Name="denngay" Grid.Column="1" Grid.Row="1" Format="dd/MM/yyyy" MinimumDate="{Binding Source={x:Reference tungay}, Path=Date}"></DatePicker>
+                        </Grid>
+                        <Label Text="Loại đơn hàng"></Label>
+                        <Picker class="base_entry">
+                            <Picker.Items>
+                                <x:String>Chọn loại đơn hàng</x:String>
+                                <x:String>Canon 60D</x:String>
+                                <x:String>Canon 70D</x:String>
+                                <x:String>Canon 77D</x:String>
+                                <x:String>Canon 80D</x:String>
+                            </Picker.Items>
+                        </Picker>
+                        <Button x:Name="btn_searching" Text="Tìm kiếm" BackgroundColor="#fff" TextColor="#006b39" Clicked="Btn_searching_Clicked"></Button>
+                    </StackLayout>
+                </StackLayout>
+            </ContentView>-->
+            
+            <views:FloatingActionButton Grid.Row="1" Grid.Column="1" Image="baseline_add_white_24.png" ButtonColor="#006b39" WidthRequest="56" HeightRequest="56"
+                                        HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"></views:FloatingActionButton>
+        </AbsoluteLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MossPrice.App">
+    <Application.Resources>
+        <ResourceDictionary>
+            <!--Global Styles-->
+            <Color x:Key="NavigationPrimary"></Color>
+            <Style TargetType="NavigationPage">
+                <Setter Property="BarBackgroundColor" Value="#2196F3" />
+                <Setter Property="BarTextColor" Value="White" />
+            </Style>
+        </ResourceDictionary>
+        <Style TargetType="NavigationPage">
+            <Setter Property="BarBackgroundColor" Value="#006b39"/>            
+            <Setter Property="BarTextColor" Value="White"/>
+        </Style>       
+        <Style TargetType="Entry" Class="login_entry">
+            <Setter Property="TextColor" Value="#fff"/>            
+        </Style>
+        <Style TargetType="Label" Class="textBlack">
+            <Setter Property="TextColor" Value="#000"/>            
+        </Style>
+        <Style TargetType="Entry" Class="base_entry">
+            <Setter Property="TextColor" Value="#555"></Setter>
+            <Setter Property="PlaceholderColor" Value="#d2d6de"></Setter>
+        </Style>
+        <Style TargetType="Entry" Class="p_entry">
+            <Setter Property="Margin" Value="20,5"></Setter>            
+        </Style>
+    </Application.Resources>
+</Application>

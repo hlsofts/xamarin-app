@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             BackgroundColor="#fff"
+             x:Class="MossPrice.Views.About">
+    <ContentPage.Content>
+        <StackLayout>
+            <TableView Margin="15">
+                <TableRoot>
+                    <TableSection>
+                        <ImageCell ImageSource="logo.png"></ImageCell>
+                        <TextCell Text="Công ty CP Giải pháp Công nghệ Moss" TextColor="#000"></TextCell>
+                        <TextCell Text="Hệ thống báo giá" TextColor="#000"></TextCell>
+                        <TextCell Text="Phiên bản 1.0" TextColor="#000"></TextCell>
+                    </TableSection>                    
+                </TableRoot>
+            </TableView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

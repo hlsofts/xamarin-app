@@ -1,0 +1,1 @@
+E:\Moss.Price.Mobile\MossPrice\MossPrice\MossPrice.UWP\MossPrice.UWP.csproj;x64

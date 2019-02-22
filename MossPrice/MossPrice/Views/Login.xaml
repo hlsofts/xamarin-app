@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             BackgroundColor="#006b39"
+             x:Class="MossPrice.Views.Login">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout VerticalOptions="CenterAndExpand">
+                <Image HorizontalOptions="Center" Source="logochuan.png" Margin="50,0"></Image>
+                <Label Text="Hệ thống báo giá" class="color_label" TextColor="White" HorizontalTextAlignment="Center" FontSize="16"></Label>
+                <StackLayout Margin="40" Orientation="Vertical">
+                    <Entry Placeholder="Tên đăng nhập" PlaceholderColor="#ddd" class="login_entry"></Entry>
+                    <Entry Placeholder="Mật khẩu" IsPassword="True" PlaceholderColor="#ddd" class="login_entry"></Entry>
+                    <Button x:Uid="btn_login" Text="Đăng nhập" TextColor="White" BackgroundColor="#00a65a" HeightRequest="40" Margin="5,0" Clicked="btn_login_Clicked"></Button>
+                    <Label Text="Quên mật khẩu?" Margin="5" TextColor="#fff"></Label>
+                </StackLayout>
+            </StackLayout>
+            
+            <ContentView x:Name="p_loading" BackgroundColor="#C0808080" Padding="10, 0" IsVisible="false" AbsoluteLayout.LayoutBounds="0, 0, 1, 1" AbsoluteLayout.LayoutFlags="All">
+                <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+                    <StackLayout Orientation="Vertical" HeightRequest="150" WidthRequest="200" BackgroundColor="White">
+                        <ActivityIndicator x:Name="activityIndicator" Margin="0,50,0,0" VerticalOptions="Center" HorizontalOptions="Center" Color="Black" WidthRequest="30" HeightRequest="30" ></ActivityIndicator>
+                        <Label TextColor="Black" VerticalOptions="Center" HorizontalOptions="Center" VerticalTextAlignment="Center" Text="Vui lòng đợi..."></Label>
+                    </StackLayout>
+                </StackLayout>
+            </ContentView>
+        </StackLayout>        
+    </ContentPage.Content>
+</ContentPage>
